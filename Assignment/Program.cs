@@ -1,7 +1,9 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.Data;
 using Assignment.InterfaceQ1;
 using Assignment.InterfaceQ2;
+using Assignment.InterfaceQ3;
 
 namespace Assignment
 {
@@ -21,6 +23,18 @@ namespace Assignment
 
         static void Main(string[] args)
         {
+
+            // part 01
+            // 1. b
+            // 2. a
+            // 3. b
+            // 4. b
+            // 5. d
+            // 6. a
+            // 7. b
+            // 8. b
+            // 9. b
+            // 10. c
             // Part 02
             #region Q1
             //Circle circle = new Circle();
@@ -64,7 +78,12 @@ namespace Assignment
 
 
             #endregion
-            #region
+            #region Q3
+            EmailNotificationService emailAddress = new EmailNotificationService();
+            SmsNotificationService smsNotification = new SmsNotificationService();
+            PushNotificationService pushNotification = new PushNotificationService();
+            smsNotification.SendNotification("mariam", "hello");
+
             #endregion
             #region
             #endregion
